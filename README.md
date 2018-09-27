@@ -28,8 +28,10 @@ Use the latest working binary that includes XTIDECFG.COM (config utility), ide_x
 Further documentation:
 ----------------------
 
-SW1 - ON: ROM Enabled; OFF: ROM Disabled
+SW1 - ON: ROM Enabled; OFF: ROM Disabled\
 SW2 - ON: EEPROM Write Enabled; OFF: EEPROM Write Disabled
+
+---
 
 SW3 - ROM I/O Port:  
 123 ROM  
@@ -72,11 +74,11 @@ Make sure that selected I/O and EEPROM addresses do not conflict with other devi
 Addresses 0xC0000 - 0xC6000 will conflict with EGA/VGA BIOS extension.\
 Addresses 0xC8000 - 0xCA000 might conflict with XT Hard Disk BIOS extension.\
 Addresses 0xE0000 and up might conflict with system BIOS on newer motherboards.\
-It is recommended to disable EEPROM write once XT IDE BIOS extension is programmed and configured.\
-\
+It is recommended to disable EEPROM write once XT IDE BIOS extension is programmed and configured.
 
+---
 
-SW4 - IDE I/O Port:\
+SW4 - IDE I/O Port:  
 123 IDE  
 111 300 < Default  
 110 320  
@@ -87,4 +89,5 @@ SW4 - IDE I/O Port:\
 001 3C0  
 000 3E0  
 
-The A8 line is provided as a solder-jumper JP3, and should change the first digit of the IDE I/O Port from 3 to 2 (so 300 becomes 200, 3C0 becomes 2C0, etc). This is untested at present.
+The A8 line is provided as a solder-jumper JP3, and should change the first digit of the IDE I/O Port from 3 to 2 (so 300 becomes 200, 3C0 becomes 2C0, etc). This is untested at present.\
+The blank, unlabeled pads on the back, under the EEPROM, are for a 10K resistor to pull down D7. It is not meant to be populated at present.
