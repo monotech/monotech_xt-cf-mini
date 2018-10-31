@@ -1,11 +1,34 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device:R_Pack04
+# Device_LED
 #
-DEF Device:R_Pack04 RN 0 0 Y N 1 F N
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Pack04
+#
+DEF Device_R_Pack04 RN 0 0 Y N 1 F N
 F0 "RN" -300 0 50 V V C CNN
-F1 "Device:R_Pack04" 200 0 50 V V C CNN
+F1 "Device_R_Pack04" 200 0 50 V V C CNN
 F2 "" 275 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -37,11 +60,11 @@ X R1.2 8 -200 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper:SolderJumper_2_Bridged
+# Jumper_SolderJumper_2_Bridged
 #
-DEF Jumper:SolderJumper_2_Bridged JP 0 0 Y N 1 F N
+DEF Jumper_SolderJumper_2_Bridged JP 0 0 Y N 1 F N
 F0 "JP" 0 80 50 H V C CNN
-F1 "Jumper:SolderJumper_2_Bridged" 0 -100 50 H V C CNN
+F1 "Jumper_SolderJumper_2_Bridged" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -60,11 +83,11 @@ X B 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper:SolderJumper_2_Open
+# Jumper_SolderJumper_2_Open
 #
-DEF Jumper:SolderJumper_2_Open JP 0 0 Y N 1 F N
+DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
 F0 "JP" 0 80 50 H V C CNN
-F1 "Jumper:SolderJumper_2_Open" 0 -100 50 H V C CNN
+F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -82,11 +105,11 @@ X B 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch:SW_DIP_x03
+# Switch_SW_DIP_x03
 #
-DEF Switch:SW_DIP_x03 SW 0 0 Y N 1 F N
+DEF Switch_SW_DIP_x03 SW 0 0 Y N 1 F N
 F0 "SW" 0 350 50 H V C CNN
-F1 "Switch:SW_DIP_x03" 0 -150 50 H V C CNN
+F1 "Switch_SW_DIP_x03" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -112,11 +135,11 @@ X ~ 6 300 200 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch:SW_SPDT
+# Switch_SW_SPDT
 #
-DEF Switch:SW_SPDT SW 0 0 Y N 1 F N
+DEF Switch_SW_SPDT SW 0 0 Y N 1 F N
 F0 "SW" 0 170 50 H V C CNN
-F1 "Switch:SW_SPDT" 0 -200 50 H V C CNN
+F1 "Switch_SW_SPDT" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -130,11 +153,11 @@ X C 3 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power:VCC
+# power_VCC
 #
-DEF power:VCC #PWR 0 0 Y Y 1 F P
+DEF power_VCC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:VCC" 0 150 50 H V C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -144,11 +167,11 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:28C64
+# xt-cf-mini-rescue_28C64-xt-cf-rescue
 #
-DEF xt-cf-rescue:28C64 U 0 40 Y Y 1 F N
+DEF xt-cf-mini-rescue_28C64-xt-cf-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 50 60 H V C CNN
-F1 "xt-cf-rescue:28C64" 0 -50 60 H V C CNN
+F1 "xt-cf-mini-rescue_28C64-xt-cf-rescue" 0 -50 60 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -184,11 +207,11 @@ X A1 9 -700 750 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:74LS04
+# xt-cf-mini-rescue_74LS04-xt-cf-rescue
 #
-DEF xt-cf-rescue:74LS04 U 0 30 Y Y 6 F N
+DEF xt-cf-mini-rescue_74LS04-xt-cf-rescue U 0 30 Y Y 6 F N
 F0 "U" -50 -150 60 H V C CNN
-F1 "xt-cf-rescue:74LS04" 0 150 60 H V C CNN
+F1 "xt-cf-mini-rescue_74LS04-xt-cf-rescue" 0 150 60 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -226,11 +249,11 @@ X ~ 13 -400 0 300 R 50 50 6 2 I I
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:74LS32
+# xt-cf-mini-rescue_74LS32-xt-cf-rescue
 #
-DEF xt-cf-rescue:74LS32 U 0 30 Y Y 4 F N
+DEF xt-cf-mini-rescue_74LS32-xt-cf-rescue U 0 30 Y Y 4 F N
 F0 "U" 0 0 60 H V C CNN
-F1 "xt-cf-rescue:74LS32" 0 150 60 H V C CNN
+F1 "xt-cf-mini-rescue_74LS32-xt-cf-rescue" 0 150 60 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -273,11 +296,11 @@ X ~ 13 -400 -50 300 R 50 50 4 2 I
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:74LS688
+# xt-cf-mini-rescue_74LS688-xt-cf-rescue
 #
-DEF xt-cf-rescue:74LS688 U 0 10 Y Y 1 F N
+DEF xt-cf-mini-rescue_74LS688-xt-cf-rescue U 0 10 Y Y 1 F N
 F0 "U" 0 50 60 H V C CNN
-F1 "xt-cf-rescue:74LS688" 0 -50 60 H V C CNN
+F1 "xt-cf-mini-rescue_74LS688-xt-cf-rescue" 0 -50 60 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -305,11 +328,11 @@ X Q3 9 -600 -300 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:BUSPC_DEV
+# xt-cf-mini-rescue_BUSPC_DEV-xt-cf-rescue
 #
-DEF xt-cf-rescue:BUSPC_DEV BUS 0 40 Y Y 1 F N
+DEF xt-cf-mini-rescue_BUSPC_DEV-xt-cf-rescue BUS 0 40 Y Y 1 F N
 F0 "BUS" 0 50 70 H V C CNN
-F1 "xt-cf-rescue:BUSPC_DEV" 0 -50 70 H V C CNN
+F1 "xt-cf-mini-rescue_BUSPC_DEV-xt-cf-rescue" 0 -50 70 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -379,11 +402,11 @@ X +12V 9 -900 700 300 R 60 60 1 1 w
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:C
+# xt-cf-mini-rescue_C-xt-cf-rescue
 #
-DEF xt-cf-rescue:C C 0 10 N Y 1 F N
+DEF xt-cf-mini-rescue_C-xt-cf-rescue C 0 10 N Y 1 F N
 F0 "C" 50 100 50 H V L CNN
-F1 "xt-cf-rescue:C" 50 -100 50 H V L CNN
+F1 "xt-cf-mini-rescue_C-xt-cf-rescue" 50 -100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -399,11 +422,11 @@ X ~ 2 0 -200 170 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:CF_CARD
+# xt-cf-mini-rescue_CF_CARD-xt-cf-rescue
 #
-DEF xt-cf-rescue:CF_CARD P 0 40 Y Y 1 F N
+DEF xt-cf-mini-rescue_CF_CARD-xt-cf-rescue P 0 40 Y Y 1 F N
 F0 "P" 0 50 60 H V C CNN
-F1 "xt-cf-rescue:CF_CARD" 0 -50 60 H V C CNN
+F1 "xt-cf-mini-rescue_CF_CARD-xt-cf-rescue" 0 -50 60 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -461,11 +484,11 @@ X ~ATASEL 9 -800 -400 300 R 50 50 1 1 I I
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:CONN_2
+# xt-cf-mini-rescue_CONN_2-xt-cf-rescue
 #
-DEF xt-cf-rescue:CONN_2 P 0 40 Y N 1 F N
+DEF xt-cf-mini-rescue_CONN_2-xt-cf-rescue P 0 40 Y N 1 F N
 F0 "P" -50 0 40 V V C CNN
-F1 "xt-cf-rescue:CONN_2" 50 0 40 V V C CNN
+F1 "xt-cf-mini-rescue_CONN_2-xt-cf-rescue" 50 0 40 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -475,11 +498,11 @@ X PM 2 -350 -100 250 R 60 60 1 1 P I
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:CP1
+# xt-cf-mini-rescue_CP1-xt-cf-rescue
 #
-DEF xt-cf-rescue:CP1 C 0 10 N N 1 F N
+DEF xt-cf-mini-rescue_CP1-xt-cf-rescue C 0 10 N N 1 F N
 F0 "C" 50 100 50 H V L CNN
-F1 "xt-cf-rescue:CP1" 50 -100 50 H V L CNN
+F1 "xt-cf-mini-rescue_CP1-xt-cf-rescue" 50 -100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -495,11 +518,11 @@ X ~ 2 0 -200 180 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:GND
+# xt-cf-mini-rescue_GND-xt-cf-rescue
 #
-DEF ~xt-cf-rescue:GND #PWR 0 0 Y Y 1 F P
+DEF ~xt-cf-mini-rescue_GND-xt-cf-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 0 30 H I C CNN
-F1 "xt-cf-rescue:GND" 0 -70 30 H I C CNN
+F1 "xt-cf-mini-rescue_GND-xt-cf-rescue" 0 -70 30 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -508,37 +531,11 @@ X GND 1 0 0 0 U 30 30 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# xt-cf-rescue:LED
+# xt-cf-mini-rescue_R-xt-cf-rescue
 #
-DEF xt-cf-rescue:LED D 0 40 Y N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "xt-cf-rescue:LED" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$ENDFPLIST
-DRAW
-P 2 0 1 0 50 50 50 -50 N
-P 3 0 1 0 -50 50 50 0 -50 -50 F
-P 3 0 1 0 65 -40 110 -80 105 -55 N
-P 3 0 1 0 80 -25 125 -65 120 -40 N
-X A 1 -200 0 150 R 40 40 1 1 P
-X K 2 200 0 150 L 40 40 1 1 P
-ENDDRAW
-ENDDEF
-#
-# xt-cf-rescue:R
-#
-DEF xt-cf-rescue:R R 0 0 N Y 1 F N
+DEF xt-cf-mini-rescue_R-xt-cf-rescue R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "xt-cf-rescue:R" 0 0 50 V V C CNN
+F1 "xt-cf-mini-rescue_R-xt-cf-rescue" 0 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

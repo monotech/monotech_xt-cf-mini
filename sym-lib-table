@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name xt-cf-rescue)(type Legacy)(uri ${KIPRJMOD}/xt-cf-rescue.lib)(options "")(descr ""))
+  (lib (name xt-cf-mini-rescue)(type Legacy)(uri ${KIPRJMOD}/xt-cf-mini-rescue.lib)(options "")(descr ""))
 )

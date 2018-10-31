@@ -473,7 +473,7 @@ Wire Wire Line
 	9600 9100 9500 9100
 Connection ~ 9500 9100
 Wire Wire Line
-	12600 6400 12700 6400
+	12600 6400 12750 6400
 Wire Wire Line
 	10900 5300 10400 5300
 Wire Wire Line
@@ -494,7 +494,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 6000 4250 6900
 $Comp
-L xt-cf-rescue:GND #PWR01
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR01
 U 1 1 511C4410
 P 9500 9600
 F 0 "#PWR01" H 9500 9600 30  0001 C CNN
@@ -507,7 +507,7 @@ $EndComp
 Text Label 6500 2600 0    60   ~ 0
 GND
 $Comp
-L xt-cf-rescue:74LS04 U5
+L xt-cf-mini-rescue:74LS04-xt-cf-rescue U5
 U 2 1 5116DA71
 P 10000 9500
 F 0 "U5" H 9950 9350 60  0000 C CNN
@@ -530,7 +530,7 @@ NoConn ~ 1700 2000
 NoConn ~ 1700 1800
 NoConn ~ 1700 1700
 $Comp
-L xt-cf-rescue:GND #PWR02
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR02
 U 1 1 5116EEA5
 P 4700 3550
 F 0 "#PWR02" H 4700 3550 30  0001 C CNN
@@ -552,7 +552,7 @@ F 3 "" H 5700 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:R R1
+L xt-cf-mini-rescue:R-xt-cf-rescue R1
 U 1 1 5116ED7F
 P 11150 5300
 F 0 "R1" V 11230 5300 50  0000 C CNN
@@ -563,7 +563,7 @@ F 3 "" H 11150 5300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L xt-cf-rescue:GND #PWR04
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR04
 U 1 1 5116ED4F
 P 11400 5300
 F 0 "#PWR04" H 11400 5300 30  0001 C CNN
@@ -589,7 +589,7 @@ F 3 "" H 13150 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:CONN_2 P2
+L xt-cf-mini-rescue:CONN_2-xt-cf-rescue P2
 U 1 1 5116EC3C
 P 12900 7250
 F 0 "P2" V 12850 7250 40  0000 C CNN
@@ -600,7 +600,7 @@ F 3 "" H 12900 7250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L xt-cf-rescue:LED D1
+L Device:LED D1
 U 1 1 5116EC22
 P 12900 6400
 F 0 "D1" H 12900 6500 50  0000 C CNN
@@ -608,7 +608,7 @@ F 1 "LED" H 12900 6300 50  0000 C CNN
 F 2 "LEDs:LED_D3.0mm" H 12900 6400 50  0001 C CNN
 F 3 "" H 12900 6400 50  0001 C CNN
 	1    12900 6400
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 NoConn ~ 10400 9500
 NoConn ~ 10450 9050
@@ -628,7 +628,7 @@ Text Label 9750 1650 2    60   ~ 0
 Text Label 6500 1600 0    60   ~ 0
 A4
 $Comp
-L xt-cf-rescue:74LS04 U5
+L xt-cf-mini-rescue:74LS04-xt-cf-rescue U5
 U 1 1 5116DA6E
 P 7300 1600
 F 0 "U5" H 7250 1450 60  0000 C CNN
@@ -661,7 +661,7 @@ A8
 Text Label 6500 2500 0    60   ~ 0
 A9
 $Comp
-L xt-cf-rescue:74LS04 U5
+L xt-cf-mini-rescue:74LS04-xt-cf-rescue U5
 U 3 1 5116DA77
 P 11200 6000
 F 0 "U5" H 11150 5850 60  0000 C CNN
@@ -672,7 +672,7 @@ F 3 "" H 11200 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:74LS04 U5
+L xt-cf-mini-rescue:74LS04-xt-cf-rescue U5
 U 6 1 5116DA69
 P 12200 6800
 F 0 "U5" H 12150 6650 60  0000 C CNN
@@ -683,7 +683,7 @@ F 3 "" H 12200 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:74LS04 U5
+L xt-cf-mini-rescue:74LS04-xt-cf-rescue U5
 U 5 1 5116DA67
 P 12200 6400
 F 0 "U5" H 12150 6250 60  0000 C CNN
@@ -694,7 +694,7 @@ F 3 "" H 12200 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:74LS04 U5
+L xt-cf-mini-rescue:74LS04-xt-cf-rescue U5
 U 4 1 5116DA62
 P 11200 6400
 F 0 "U5" H 11150 6250 60  0000 C CNN
@@ -705,7 +705,7 @@ F 3 "" H 11200 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:74LS32 U4
+L xt-cf-mini-rescue:74LS32-xt-cf-rescue U4
 U 4 1 5116DA5C
 P 10000 9050
 F 0 "U4" H 10000 9050 60  0000 C CNN
@@ -716,7 +716,7 @@ F 3 "" H 10000 9050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:74LS32 U4
+L xt-cf-mini-rescue:74LS32-xt-cf-rescue U4
 U 3 1 5116DA57
 P 10000 8650
 F 0 "U4" H 10000 8650 60  0000 C CNN
@@ -727,7 +727,7 @@ F 3 "" H 10000 8650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:74LS32 U4
+L xt-cf-mini-rescue:74LS32-xt-cf-rescue U4
 U 2 1 5116DA55
 P 8900 1650
 F 0 "U4" H 8900 1650 60  0000 C CNN
@@ -738,7 +738,7 @@ F 3 "" H 8900 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:74LS32 U4
+L xt-cf-mini-rescue:74LS32-xt-cf-rescue U4
 U 1 1 5116DA4F
 P 8900 2050
 F 0 "U4" H 8900 2050 60  0000 C CNN
@@ -749,7 +749,7 @@ F 3 "" H 8900 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:74LS688 U3
+L xt-cf-mini-rescue:74LS688-xt-cf-rescue U3
 U 1 1 5116DA04
 P 7500 3000
 F 0 "U3" H 7500 3050 60  0000 C CNN
@@ -837,7 +837,7 @@ D1
 Text Label 12800 1600 2    60   ~ 0
 D0
 $Comp
-L xt-cf-rescue:CF_CARD P1
+L xt-cf-mini-rescue:CF_CARD-xt-cf-rescue P1
 U 1 1 5116D113
 P 11600 3000
 F 0 "P1" H 11600 3050 60  0000 C CNN
@@ -852,7 +852,7 @@ RDY/~BUSY
 Text Label 8400 7000 2    60   ~ 0
 RDY/~BUSY
 $Comp
-L xt-cf-rescue:28C64 U1
+L xt-cf-mini-rescue:28C64-xt-cf-rescue U1
 U 1 1 509149DC
 P 7300 6150
 F 0 "U1" H 7300 6200 60  0000 C CNN
@@ -888,7 +888,7 @@ F 3 "" H 1300 8600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:GND #PWR08
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR08
 U 1 1 508E02DD
 P 1300 9400
 F 0 "#PWR08" H 1300 9400 30  0001 C CNN
@@ -899,7 +899,7 @@ F 3 "" H 1300 9400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:BUSPC_DEV BUS1
+L xt-cf-mini-rescue:BUSPC_DEV-xt-cf-rescue BUS1
 U 1 1 508DEF42
 P 2600 2700
 F 0 "BUS1" H 2600 2750 70  0000 C CNN
@@ -910,7 +910,7 @@ F 3 "" H 2600 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:GND #PWR09
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR09
 U 1 1 508DF5E3
 P 4250 7000
 F 0 "#PWR09" H 4250 7000 30  0001 C CNN
@@ -932,7 +932,7 @@ F 3 "" H 2350 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:GND #PWR011
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR011
 U 1 1 508DF511
 P 1550 7100
 F 0 "#PWR011" H 1550 7100 30  0001 C CNN
@@ -966,7 +966,7 @@ A18
 Text Label 3950 5300 0    60   ~ 0
 A19
 $Comp
-L xt-cf-rescue:74LS688 U2
+L xt-cf-mini-rescue:74LS688-xt-cf-rescue U2
 U 1 1 508DF197
 P 4950 6200
 F 0 "U2" H 4950 6250 60  0000 C CNN
@@ -1109,7 +1109,7 @@ Compact Flash Interface
 Text Label 6200 6800 0    60   ~ 0
 ~ROM_CS
 $Comp
-L xt-cf-rescue:GND #PWR014
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR014
 U 1 1 4EF92A22
 P 1200 2200
 F 0 "#PWR014" H 1200 2200 30  0001 C CNN
@@ -1131,7 +1131,7 @@ F 3 "" H 1000 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:GND #PWR016
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR016
 U 1 1 4EF92983
 P 1200 4300
 F 0 "#PWR016" H 1200 4300 30  0001 C CNN
@@ -1142,7 +1142,7 @@ F 3 "" H 1200 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:CP1 C8
+L xt-cf-mini-rescue:CP1-xt-cf-rescue C8
 U 1 1 4EF13BF8
 P 3400 9000
 F 0 "C8" H 3450 9100 50  0000 L CNN
@@ -1153,7 +1153,7 @@ F 3 "" H 3400 9000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:GND #PWR017
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR017
 U 1 1 4ED6C9CC
 P 1200 1300
 F 0 "#PWR017" H 1200 1300 30  0001 C CNN
@@ -1179,7 +1179,7 @@ SW1 - ON: ROM Enabled; OFF: ROM Disabled\nSW2 - ON: EEPROM Write Enabled; OFF: E
 Text Notes 6100 8700 1    120  ~ 0
 Settings
 $Comp
-L xt-cf-rescue:CP1 C7
+L xt-cf-mini-rescue:CP1-xt-cf-rescue C7
 U 1 1 4D4252FF
 P 3100 9000
 F 0 "C7" H 3150 9100 50  0000 L CNN
@@ -1190,7 +1190,7 @@ F 3 "" H 3100 9000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:C C6
+L xt-cf-mini-rescue:C-xt-cf-rescue C6
 U 1 1 4C69F1EE
 P 2800 9000
 F 0 "C6" H 2850 9100 50  0000 L CNN
@@ -1201,7 +1201,7 @@ F 3 "" H 2800 9000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:C C1
+L xt-cf-mini-rescue:C-xt-cf-rescue C1
 U 1 1 4C69F1DA
 P 1300 9000
 F 0 "C1" H 1350 9100 50  0000 L CNN
@@ -1212,7 +1212,7 @@ F 3 "" H 1300 9000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:C C2
+L xt-cf-mini-rescue:C-xt-cf-rescue C2
 U 1 1 4C69F1D9
 P 1600 9000
 F 0 "C2" H 1650 9100 50  0000 L CNN
@@ -1223,7 +1223,7 @@ F 3 "" H 1600 9000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:C C3
+L xt-cf-mini-rescue:C-xt-cf-rescue C3
 U 1 1 4C69F1D8
 P 1900 9000
 F 0 "C3" H 1950 9100 50  0000 L CNN
@@ -1234,7 +1234,7 @@ F 3 "" H 1900 9000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:C C4
+L xt-cf-mini-rescue:C-xt-cf-rescue C4
 U 1 1 4C69F1D7
 P 2200 9000
 F 0 "C4" H 2250 9100 50  0000 L CNN
@@ -1245,7 +1245,7 @@ F 3 "" H 2200 9000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xt-cf-rescue:C C5
+L xt-cf-mini-rescue:C-xt-cf-rescue C5
 U 1 1 4C69F1D6
 P 2500 9000
 F 0 "C5" H 2550 9100 50  0000 L CNN
@@ -1484,7 +1484,7 @@ F 3 "~" H 13350 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13100 6400 13150 6400
+	13050 6400 13150 6400
 Wire Wire Line
 	13150 6400 13150 6250
 Wire Wire Line
@@ -1545,7 +1545,7 @@ Connection ~ 6000 3300
 Wire Wire Line
 	6000 3300 6900 3300
 $Comp
-L xt-cf-rescue:R R2
+L xt-cf-mini-rescue:R-xt-cf-rescue R2
 U 1 1 5BF70D4E
 P 11150 5500
 F 0 "R2" V 11230 5500 50  0000 C CNN
@@ -1556,7 +1556,7 @@ F 3 "" H 11150 5500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L xt-cf-rescue:GND #PWR0101
+L xt-cf-mini-rescue:GND-xt-cf-rescue #PWR0101
 U 1 1 5BF70DB2
 P 11400 5500
 F 0 "#PWR0101" H 11400 5500 30  0001 C CNN
